@@ -20,13 +20,13 @@ rickAndMortyCharacters.push('Morty', 'Summer');
 
 // 1.5 (TODAVÍA NO)
 
-rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+// rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
 
-rickAndMortyCharacters.pop();
+// rickAndMortyCharacters.pop();
 
-console.log(rickAndMortyCharacters[0]);
+// console.log(rickAndMortyCharacters[0]);
 
-console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]);
+// console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]);
 
 // 1.6 (TODAVÍA NO)
 
