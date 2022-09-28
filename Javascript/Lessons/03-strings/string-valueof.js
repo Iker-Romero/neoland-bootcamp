@@ -1,6 +1,6 @@
 const stringObject = new String('foo');
 
-const stringObjectOther = {String: 'feo'};
+const stringObjectOther = {string: 'foo'};
 
 console.log(stringObject);
 
