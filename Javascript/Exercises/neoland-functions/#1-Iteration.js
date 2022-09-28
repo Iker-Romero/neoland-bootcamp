@@ -1,4 +1,4 @@
-function sum(numberOne , numberTwo) {
+const sum = (numberOne , numberTwo) => {
     if (numberOne > numberTwo) {
         return numberOne;
     } else if (numberOne < numberTwo) {

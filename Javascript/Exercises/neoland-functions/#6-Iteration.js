@@ -12,7 +12,7 @@ const duplicates = [
   "soda",
 ];
 
-function removeDuplicates(param) {
+const removeDuplicates = param => {
   for (let i = 0; i <= param.length - 1; i++) {
     if (i !== param.lastIndexOf(param[i])) {
       param.splice(i, 1);
