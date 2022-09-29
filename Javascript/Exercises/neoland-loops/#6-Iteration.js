@@ -9,12 +9,12 @@ const toys = [
 newToys = [];
 
 for (const toy of toys) {
-  if (((toys[toys.indexOf(toy)].name).includes("gato")) === false) {
+  if (toys[toys.indexOf(toy)].name.includes("gato") === false) {
     // toys.splice(toys.indexOf(toy), 1);
-    array.push(toy);
+    newToys.push(toy);
   }
 }
 
-console.log(newToys);
+// console.log(toys);
 
-console.log(array);
+console.log(newToys);
