@@ -11,6 +11,13 @@ const nameFinder = [
   "Jessica",
   "Marc",
 ];
-function finderName(param) {
-  // insert code
+function finderName(arr, nombre) {
+  for (const name of nameFinder) {
+    if (name === nombre) {
+      return true + ', posición ' + arr.indexOf(nombre);
+    }
+  }
+  return false;
 }
+
+console.log(finderName(nameFinder, 'Iker'));
