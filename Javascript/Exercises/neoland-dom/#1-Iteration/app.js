@@ -20,5 +20,4 @@ console.log(document.querySelectorAll('[data-function="testMe"]'));
 
 // 1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo data-function="testMe"
 
-console.log(document.querySelectorAll('[data-function="testMe"]')[2].innerText);
-// console.log(personaje[0].innerHTML);
+console.log(document.querySelectorAll('[data-function="testMe"]')[2].innerHTML);
