@@ -31,3 +31,5 @@ let totalScorePassed = exams.reduce((previousValue, currentValue) => {
 console.log(totalScorePassed);
 
 // 7.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce().
+
+const media = totalScore / exams.length;
