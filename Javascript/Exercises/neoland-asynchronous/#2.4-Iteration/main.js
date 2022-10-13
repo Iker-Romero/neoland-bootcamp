@@ -32,6 +32,7 @@ button.addEventListener("click", async () => {
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
         button.previousSibling.remove();
+        button.remove();
       });
     });
   } catch (error) {
