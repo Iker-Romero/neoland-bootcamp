@@ -23,18 +23,21 @@ button.addEventListener("click", async () => {
     // 2.4 En base al ejercicio anterior, crea un botón con el texto 'X' para cada uno de los p que hayas insertado y que si el usuario hace click en este botón eliminemos el parrafo asociado.
 
     for (const country of data.country) {
-      document.body.innerHTML += `
-      <p>El nombre ${input.value} tiene un ${country.probability} porciento de ser ${country.country_id}.</p>
-      <button class="delete-button">X</button>
-      `;
-    }
-    const buttons = document.querySelectorAll(".delete-button");
-    buttons.forEach((button) => {
+      const div = document.createElement("div");
+      const p = document.createElement("p");
+      const text = document.createTextNode(
+        `El nombre ${input.value} tiene un ${country.probability} porciento de ser ${country.country_id}.`
+      );
+      p.appendChild(text);
+      const button = document.createElement("button");
+      button.innerText = "X";
+      div.appendChild(p);
       button.addEventListener("click", () => {
-        button.previousSibling.remove();
-        button.remove();
+        div.remove();
       });
-    });
+      div.appendChild(button);
+      document.body.appendChild(div);
+    }
   } catch (error) {
     console.log(error);
   }
